@@ -1,0 +1,10 @@
+"filament::widgets/tilament-info-widget  " , "
+filament: resources/pages/view-record  " , " filament: resources/pages/edit-record  " , " filament::widgets/account-widget   " , " filament: resources/pages/list-records  " , " filament: resources/pages/create-record  " , " filament-support:actions/attach   " , " filament-support:actions/create   " , " filament-support:actions/delete   " , "
+filament-support:actions/detach " , " filament-support:actions/dissociate " , " filament-support:actions/edit  " , "
+filament-support:actions/force-delete " , "
+filament-support:actions/associate   " , "
+filament: pages/dashboard " , " filament-support:actions/modal " , " filament-support:actions/group  " , "
+filament-support:actions/replicate  " , "    validation " , "
+filament-support:actions/view " , " filament-support:components/button   " , " filament-support:components/modal  " , "
+filament: global-search " , "    filament:login " , " filament-support:actions/restore  " , "     passwords  " , " filament: layout   "
+
