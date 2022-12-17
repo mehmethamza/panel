@@ -24,6 +24,7 @@ class BlogResource extends Resource
         return $form
             ->schema([
                     Forms\Components\TextInput::make("name"),
+                    Forms\Components\TextInput::make("slug"),
                 Forms\Components\SpatieMediaLibraryFileUpload::make("thumb"),
             ]);
     }

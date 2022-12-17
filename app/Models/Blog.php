@@ -14,27 +14,16 @@ class Blog extends Model implements HasMedia
 {
     protected $guarded=[];
     use InteractsWithMedia;
-//    public function registerMediaConversions(Media $media = null): void
-//    {
-//        $this->addMediaConversion('crop')
-//            ->fit(Manipulations::FIT_CROP, 300, 60)
-//            ->performOnCollections('thumb')
-//            ->keepOriginalImageFormat();
-//
-//    }
-//
-//    public function registerMediaCollections(): void
-//    {
-//        $this
-//            ->addMediaCollection('thumb')
-//            ->useFallbackUrl('https://via.placeholder.com/' . (300) . 'x' . (60));
-//
-//    }
+
     public function registerMediaConversions(Media $media = null): void
     {
         $this
             ->addMediaConversion('thumb')
             ->fit(Manipulations::FIT_CROP, 300, 300)
             ->nonQueued();
+    }
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }

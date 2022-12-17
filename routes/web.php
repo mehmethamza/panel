@@ -20,9 +20,6 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
     ],
     function () {
-        Route::get('/', function()
-        {
-            return __('general.main');
-        });
+        Route::get('/blog/{slug}', [\App\Http\Controllers\BlogController::class,"show"]);
 
     });
