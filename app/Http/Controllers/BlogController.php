@@ -23,7 +23,6 @@ class BlogController extends Controller
      */
     public function show(\App\Models\Blog $blog)
     {
-        @dd($blog);
         return response()->view('blog.show',compact('blog'));
     }
 }

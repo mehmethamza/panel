@@ -20,6 +20,6 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
     ],
     function () {
-        Route::get('/blog/{slug}', [\App\Http\Controllers\BlogController::class,"show"]);
+        Route::get(\Mcamara\LaravelLocalization\Facades\LaravelLocalization::transRoute('routes.front.blog.show'), [\App\Http\Controllers\BlogController::class,"show"])->name("front.blog.show");
 
     });
